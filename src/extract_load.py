@@ -40,8 +40,9 @@ def salvar_no_postgres(df, schema='public'):
 
 if __name__ == "__main__":
     dados_concatenados = buscar_todos_dados_commodities(commodities)
-    print(dados_concatenados)
-    # salvar_no_postgres(dados_concatenados, schema='public')
+    print("Salvando dados...")
+    salvar_no_postgres(dados_concatenados, schema='public')
+    print("Dados Salvos...")
 
 
 

@@ -1,0 +1,92 @@
+[0m22:51:32.800943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1e56e090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1e56e8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1e57e390>]}
+
+
+============================== 22:51:32.802867 | 18404533-7364-4829-b8a7-c9af54ed0660 ==============================
+[0m22:51:32.802867 [info ] [MainThread]: Running with dbt=1.8.7
+[0m22:51:32.803258 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/renat0z/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:51:46.421223 [debug] [MainThread]: Starter project path: /home/renat0z/dwdozero/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m22:51:46.425780 [info ] [MainThread]: 
+Your new dbt project "dbsalesaovivo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:51:46.426269 [info ] [MainThread]: Setting up your profile.
+[0m22:51:53.269438 [error] [MainThread]: Encountered an error:
+
+[0m22:51:53.275994 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/renat0z/dwdozero/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/renat0z/dwdozero/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/renat0z/dwdozero/.venv/lib/python3.11/site-packages/dbt/cli/main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/renat0z/dwdozero/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "/home/renat0z/dwdozero/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 249, in setup_profile
+    if not self.check_if_can_write_profile(profile_name=profile_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/renat0z/dwdozero/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 212, in check_if_can_write_profile
+    response = click.confirm(
+               ^^^^^^^^^^^^^^
+  File "/home/renat0z/dwdozero/.venv/lib/python3.11/site-packages/click/termui.py", line 235, in confirm
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m22:51:53.276810 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 20.503183, "process_user_time": 0.703239, "process_kernel_time": 0.120555, "process_mem_max_rss": "87428", "process_in_blocks": "152", "process_out_blocks": "64", "command_success": false}
+[0m22:51:53.277240 [debug] [MainThread]: Command `dbt init` failed at 22:51:53.277142 after 20.50 seconds
+[0m22:51:53.277501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1e56e8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1ea4b090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e21bc5cd0>]}
+[0m22:51:53.277770 [debug] [MainThread]: Flushing usage events
+[0m22:52:24.961741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f591ed7d710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f591ed7dd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f591ed7dbd0>]}
+
+
+============================== 22:52:24.963581 | e39e1969-7018-446f-9a97-6331d36df290 ==============================
+[0m22:52:24.963581 [info ] [MainThread]: Running with dbt=1.8.7
+[0m22:52:24.964046 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/renat0z/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:52:39.658599 [info ] [MainThread]: A project called dbsalesaovivo already exists here.
+[0m22:52:39.660057 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 14.72357, "process_user_time": 0.666908, "process_kernel_time": 0.049769, "process_mem_max_rss": "87268", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m22:52:39.661137 [debug] [MainThread]: Command `dbt init` succeeded at 22:52:39.660941 after 14.72 seconds
+[0m22:52:39.661757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f591edb5f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f591f27f190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59222bf5d0>]}
+[0m22:52:39.662324 [debug] [MainThread]: Flushing usage events
+[0m22:57:42.446502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda5e441bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda5e0de650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda5e0dc9d0>]}
+
+
+============================== 22:57:42.450988 | cbb9f750-efbb-4f45-a804-133010acc175 ==============================
+[0m22:57:42.450988 [info ] [MainThread]: Running with dbt=1.8.7
+[0m22:57:42.451468 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/renat0z/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m22:58:08.425012 [debug] [MainThread]: Starter project path: /home/renat0z/dwdozero/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m22:58:08.435045 [info ] [MainThread]: 
+Your new dbt project "invista" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:58:08.435430 [info ] [MainThread]: Setting up your profile.
+[0m22:59:10.282862 [info ] [MainThread]: Profile invista written to /home/renat0z/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:59:10.285520 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 87.86719, "process_user_time": 0.834222, "process_kernel_time": 0.047399, "process_mem_max_rss": "91508", "process_in_blocks": "52176", "process_out_blocks": "88"}
+[0m22:59:10.286090 [debug] [MainThread]: Command `dbt init` succeeded at 22:59:10.285995 after 87.87 seconds
+[0m22:59:10.286392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda5e0dded0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda5e0de790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda615f3610>]}
+[0m22:59:10.286695 [debug] [MainThread]: Flushing usage events

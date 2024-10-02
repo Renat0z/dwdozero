@@ -25,15 +25,9 @@ engine = create_engine(DATABASE_URL)
 def get_data():
     query = f"""
     SELECT
-        data,
-        simbolo,
-        valor_fechamento,
-        acao,
-        quantidade,
-        valor,
-        ganho
+        *
     FROM
-        public.dm_commodities;
+        public.stg_commodities;
     """
     df = pd.read_sql(query, engine)
     return df

@@ -2,7 +2,7 @@ with source as (
     select
         "Date",
         "Close",
-        simbolo
+        "simbolo"
     from {{ source("dbsalesaovivo_dnkd", "commodities") }}
 ),
 renamed as (
